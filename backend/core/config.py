@@ -15,9 +15,10 @@ class Settings(BaseSettings):
     JWT_EXPIRE_DAYS: int = 7
     GOOGLE_CLIENT_ID: str = ""
 
-    # Shopify
+    # Shopify (client-credentials grant; access token is minted on demand)
     SHOPIFY_SHOP_DOMAIN: str = ""
-    SHOPIFY_ACCESS_TOKEN: str = ""
+    SHOPIFY_CLIENT_ID: str = ""
+    SHOPIFY_CLIENT_SECRET: str = ""
 
     # CALL-E
     CALLE_API_KEY: str = ""
