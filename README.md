@@ -45,7 +45,12 @@ Edit `.env` and set `VITE_GOOGLE_CLIENT_ID` if you want Google sign-in.
 
 ## Run
 
-Open two terminals:
+**Backend (one line, PowerShell):**
+```powershell
+cd backend; .\.venv\Scripts\Activate.ps1; uvicorn main:app --reload --port 8008
+```
+
+Or open two terminals:
 
 **Terminal 1 — Backend**
 ```bash
